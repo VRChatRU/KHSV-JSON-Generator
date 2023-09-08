@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор списка вопросов для КХСВ</title>
+</head>
+<body>
+    <style>
+        body { 
+            color: #1f2937;
+            font-family: system-ui;
+        }
+        .question {
+            border: none;
+            background-color: #bebeff;
+            width: 35.8rem;
+            height: 2rem;
+            margin-bottom: .3rem;
+            padding-left: .7rem;
+        }
+        .answer {
+            border: none;
+            background-color: bisque;
+            width: 14.3rem;
+            height: 1.5rem;
+            margin: .3rem;
+            padding-left: .7rem;
+        }
+    </style> 
+    <h1>Генератор списка вопросов для КХСВ v1.0</h1>
+    <ul>
+        <li>
+            <h3 class="title">Вопрос 1</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 1">
+            <div class="flex">
+                <input class="radio" name="0" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="0" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="0" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="0" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 2</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 2">
+            <div class="flex">
+                <input class="radio" name="1" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="1" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="1" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="1" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 3</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 3">
+            <div class="flex">
+                <input class="radio" name="2" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="2" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="2" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="2" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 4</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 4">
+            <div class="flex">
+                <input class="radio" name="3" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="3" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="3" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="3" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 5</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 5">
+            <div class="flex">
+                <input class="radio" name="4" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="4" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="4" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="4" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 6</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 6">
+            <div class="flex">
+                <input class="radio" name="5" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="5" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="5" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="5" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 7</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 7">
+            <div class="flex">
+                <input class="radio" name="6" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="6" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="6" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="6" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 8</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 8">
+            <div class="flex">
+                <input class="radio" name="7" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="7" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="7" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="7" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 9</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 9">
+            <div class="flex">
+                <input class="radio" name="8" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="8" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="8" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="8" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 10</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 10">
+            <div class="flex">
+                <input class="radio" name="9" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="9" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="9" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="9" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 11</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 11">
+            <div class="flex">
+                <input class="radio" name="10" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="10" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="10" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="10" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 12</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 12">
+            <div class="flex">
+                <input class="radio" name="11" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="11" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="11" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="11" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 13</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 13">
+            <div class="flex">
+                <input class="radio" name="12" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="12" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="12" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="12" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 14</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 14">
+            <div class="flex">
+                <input class="radio" name="13" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="13" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="13" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="13" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+        <li>
+            <h3 class="title">Вопрос 15</h3>
+            <input class="question" type="text" placeholder="Введите вопрос 15">
+            <div class="flex">
+                <input class="radio" name="14" type="radio">
+                A
+                <input class="answer" type="text" placeholder="Введите ответ A">
+                <input class="radio" name="14" type="radio">
+                B
+                <input class="answer" type="text" placeholder="Введите ответ B">
+            </div>
+            <div class="flex">
+                <input class="radio" name="14" type="radio">
+                C
+                <input class="answer" type="text" placeholder="Введите ответ C">
+                <input class="radio" name="14" type="radio">
+                D
+                <input class="answer" type="text" placeholder="Введите ответ D">
+            </div>
+        </li>
+    </ul>
+    <button onclick="GenerateFile()">
+        <h3>Сгенерировать .JSON файл</h3>
+    </button>
+    
+    <script>
+            function GenerateFile() {
+                const inputs = document.querySelectorAll('input')
+                const output = []
+                for (let i = 0; i < inputs.length; i++) {
+                    if (!inputs[i].value) { alert('Не все поля заполнены в вопросе № ' + ((i/9)+1).toFixed() ); break }
+                    if (inputs[i].value.match('"')) { alert('Недопустимый символ ( " ) Вопрос № ' + ((i/9)+1).toFixed() ); break }
+                    if (i % 9 === 0) {
+                        if(!inputs[i+1].checked && !inputs[i+3].checked && !inputs[i+5].checked && !inputs[i+7].checked) { alert('Не выбран ответ в вопросе № ' + ((i/9)+1)); break }
+                        const Question = inputs[i].value;
+                        const Answers = [inputs[i+2].value,inputs[i+4].value,inputs[i+6].value,inputs[i+8].value]
+                        // Я тупой как это красиво сделать то?
+                        let RightAnswer = 0
+                        if(inputs[i+1].checked) { RightAnswer=0 }
+                        if(inputs[i+3].checked) { RightAnswer=1 }
+                        if(inputs[i+5].checked) { RightAnswer=2 }
+                        if(inputs[i+7].checked) { RightAnswer=3 }
+                        //=================================
+                        const outputQ = {
+                            Question,
+                            Answers,
+                            RightAnswer
+                        }
+                        output.push(outputQ)
+                        if(output.length === 15) {
+                            // console.log(output)
+                            // Нагуглил в интернете. выглядит костыльно
+                            const element = document.createElement('a')
+                            element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(output, null, 2)))
+                            element.setAttribute('download', 'questions.json')
+                            element.style.display = 'none'
+                            document.body.appendChild(element)
+                            element.click()
+                            document.body.removeChild(element)
+                            //==========================================
+                        }
+                    }
+                }
+            }
+    </script>
+</body>
+</html>
